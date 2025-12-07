@@ -1,0 +1,13 @@
+{
+  "training_date": "2025-12-07T14:17:54.474659",
+  "num_samples": 910,
+  "num_features": 30,
+  "test_size": 0.2,
+  "train_r2": 0.9999172631346342,
+  "test_r2": 0.9906900046606956,
+  "train_rmse": 0.16014985892002498,
+  "test_rmse": 1.6980391299479953,
+  "cv_mean_r2": 0.9842637998514426,
+  "cv_std_r2": 0.0031831209086589977,
+  "target_column": "difficulty_score"
+}

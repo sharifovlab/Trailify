@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: trail-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MODEL_PATH
+        value: models/trail_model_v1.0.0.pkl
+      - key: ALLOWED_ORIGINS
+        value: https://your-app.vercel.app,http://localhost:5173
