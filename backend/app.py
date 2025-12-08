@@ -250,7 +250,7 @@ async def root():
 
 
 @app.post("/predict")
-async def predict_difficulty(file: UploadFile = File(...)):
+async def predict_difficulty(file: UploadFile = File(...),surface_type: str = "mixed"):
     if not file.filename.endswith('.gpx'):
         raise HTTPException(status_code=400, detail="Только GPX файлы поддерживаются")
     
