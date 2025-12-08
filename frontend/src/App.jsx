@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
 import { Mountain, TrendingUp, Gauge, MapPin, Upload, CheckCircle2, XCircle, TrendingDown, Maximize2, Navigation, AlertCircle } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://trailify-know-your-trail-80ez.onrender.com';
 
 export default function TrailPredictor() {
   const [file, setFile] = useState(null);
